@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+  <display-name>HotelReservationSystem</display-name>
+
+  <!-- Hotel Servlets -->
+  <servlet>
+    <servlet-name>AddHotelServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.AddHotelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddHotelServlet</servlet-name>
+    <url-pattern>/AddHotelServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddReviewServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.AddReviewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddReviewServlet</servlet-name>
+    <url-pattern>/AddReviewServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EditHotelServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.EditHotelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditHotelServlet</servlet-name>
+    <url-pattern>/EditHotelServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteHotelServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.DeleteHotelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteHotelServlet</servlet-name>
+    <url-pattern>/DeleteHotelServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TouristProfileServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.TouristProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TouristProfileServlet</servlet-name>
+    <url-pattern>/TouristProfileServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteTouristAccountServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.DeleteTouristAccountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteTouristAccountServlet</servlet-name>
+    <url-pattern>/DeleteTouristAccountServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateTouristProfileServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.UpdateTouristProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateTouristProfileServlet</servlet-name>
+    <url-pattern>/UpdateTouristProfileServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Room Servlets -->
+  <servlet>
+    <servlet-name>AddRoomServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.AddRoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddRoomServlet</servlet-name>
+    <url-pattern>/AddRoomServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EditRoomServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.EditRoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditRoomServlet</servlet-name>
+    <url-pattern>/EditRoomServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteRoomServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.DeleteRoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteRoomServlet</servlet-name>
+    <url-pattern>/DeleteRoomServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ListRoomsServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.ListRoomsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListRoomsServlet</servlet-name>
+    <url-pattern>/ListRoomsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/ProfileServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateProfileServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.UpdateProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProfileServlet</servlet-name>
+    <url-pattern>/UpdateProfileServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>OwnerSignupServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.OwnerSignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OwnerSignupServlet</servlet-name>
+    <url-pattern>/OwnerSignupServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.AdminDashboardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <url-pattern>/AdminDashboardServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MyReviewsServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.MyReviewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyReviewsServlet</servlet-name>
+    <url-pattern>/MyReviewsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewReviewsServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.ViewReviewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewReviewsServlet</servlet-name>
+    <url-pattern>/ViewReviewsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TouristRegisterServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.TouristRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TouristRegisterServlet</servlet-name>
+    <url-pattern>/TouristRegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TouristDashboardServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.TouristDashboardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TouristDashboardServlet</servlet-name>
+    <url-pattern>/TouristDashboardServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddBookingServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.AddBookingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddBookingServlet</servlet-name>
+    <url-pattern>/AddBookingServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EditBookingServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.EditBookingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditBookingServlet</servlet-name>
+    <url-pattern>/EditBookingServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteBookingServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.DeleteBookingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteBookingServlet</servlet-name>
+    <url-pattern>/DeleteBookingServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BuyRoomServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.BuyRoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuyRoomServlet</servlet-name>
+    <url-pattern>/BuyRoomServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PaymentServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.PaymentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentServlet</servlet-name>
+    <url-pattern>/PaymentServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewPaymentsServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.ViewPaymentsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewPaymentsServlet</servlet-name>
+    <url-pattern>/ViewPaymentsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewHotelRoomsServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.ViewHotelRoomsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewHotelRoomsServlet</servlet-name>
+    <url-pattern>/ViewHotelRoomsServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>DeleteAccountServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.DeleteAccountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAccountServlet</servlet-name>
+    <url-pattern>/DeleteAccountServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>OwnerLogoutServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.OwnerLogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OwnerLogoutServlet</servlet-name>
+    <url-pattern>/ownerLogout</url-pattern>
+  </servlet-mapping>
+
+  <!-- Other Servlets -->
+  <servlet>
+    <servlet-name>UpdateAvailabilityServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.UpdateAvailabilityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateAvailabilityServlet</servlet-name>
+    <url-pattern>/UpdateAvailabilityServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewBookingsServlet</servlet-name>
+    <servlet-class>com.HotelReservation.servlets.ViewBookingsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewBookingsServlet</servlet-name>
+    <url-pattern>/ViewBookingsServlet</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
